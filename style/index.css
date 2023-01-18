@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+#three-card-first{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#three-card-first img{
+    width: 100%;
+}
+.loki-single-image  img{
+    width: 100vw;
+}
+
