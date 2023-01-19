@@ -7,6 +7,7 @@ button{
 button:hover{
     font-weight: 800;
     color: black;
+    font-size: large;
 }
 
 #l-navbar-black{
@@ -33,7 +34,7 @@ button:hover{
 #l-first-navbar{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     justify-content: space-between;
     gap: 10px;
 }
@@ -52,7 +53,7 @@ button:hover{
 
 #l-first-navbar div:nth-child(2) div{
     padding: 0px 10px 0px 10px;
-    border: 2px blue solid;
+    border: 2px teal solid;
     border-radius: 50px;
 }
 
