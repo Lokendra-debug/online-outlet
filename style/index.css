@@ -18,3 +18,12 @@
     width: 100vw;
 }
 
+#four-card-first{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#four-card-first img{
+    width: 100%;
+}
+
