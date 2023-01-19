@@ -1,0 +1,71 @@
+
+button{
+    border: none;
+    background-color: white;
+    color: teal;
+}
+button:hover{
+    font-weight: 800;
+    color: black;
+}
+
+#l-navbar-black{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#l-main-navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 40px 4px 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: center;
+    
+}
+
+#l-main-navbar-container img{
+    width: 10%;
+    height: 5em;
+    padding: 0px;
+}
+
+#l-first-navbar{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#l-first-navbar div:nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#l-first-navbar div:nth-child(2){
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#l-first-navbar div:nth-child(2) div{
+    padding: 0px 10px 0px 10px;
+    border: 2px blue solid;
+    border-radius: 50px;
+}
+
+#l-first-navbar div:nth-child(2) div input{
+    border: 0px;
+    outline: 0px;
+   
+}
+
+#icon-background{
+    color: white;
+    background-color:black;
+    border: 0px;
+    outline: 0px;
+}
+
