@@ -27,7 +27,10 @@ button a:hover{
     padding: 4px 40px 4px 40px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     align-items: center;
-    
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
 }
 
 #l-main-navbar-container img{

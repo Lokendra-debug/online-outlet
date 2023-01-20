@@ -15,14 +15,12 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 10px;
-    background-color:rgb(37, 35, 35);
+    background-color: white;
 }
 
 #all-functionality{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color:skyblue;
     border-radius: 10px;
-    
     
 }
 
@@ -60,8 +58,7 @@
 #all-products>div{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    background-color: rgb(41, 37, 37);
-    color: white;
+    color: black;
 }
 
 #all-products>div>img{
