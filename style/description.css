@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+body{
+    background-color: rgb(36, 30, 30);
+}
+
+#product-description{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 30px;
+    height: 75vh;
+    background-color: rgb(73, 62, 62);
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 40px;
+}
+
+.divleft{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+
+}
+.divleft img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+}
+
+.divright{
+
+    border: 4px dashed rgb(238, 77, 14);
+    padding: 20px;
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+}
+
+.addtocart{
+    background-color: rgb(194, 26, 26);
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 10px;
+}

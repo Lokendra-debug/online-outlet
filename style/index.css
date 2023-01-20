@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+body{
+    position: relative;
+}
 
 #three-card-first{
     width: 100vw;
