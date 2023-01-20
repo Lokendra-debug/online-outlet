@@ -4,7 +4,12 @@ button{
     background-color: white;
     color: teal;
 }
-button:hover{
+
+button a{
+    text-decoration: none;
+    color: teal;
+}
+button a:hover{
     font-weight: 800;
     color: black;
     font-size: large;
