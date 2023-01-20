@@ -9,7 +9,9 @@ button.addEventListener("click",(event)=>{
     }).then((res)=>{
         checkvalue=res[0];
         if(email.value==checkvalue.email && password.value==checkvalue.password){
-            console.log("successful")
+            localStorage.setItem("currentuser",JSON.stringify(checkvalue));
+            window.location.href="index.html"
+
         }
         else{
             alert("Wrong Credentials!")
