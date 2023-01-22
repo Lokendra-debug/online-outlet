@@ -45,6 +45,7 @@
     border-top: 1px solid teal;
     display: grid;
     gap: 50px;
+    gap:50px;
     
     
 }
@@ -54,7 +55,26 @@
     align-items: center;
     gap: 50px;
 }
+#left-main-addtocart>div p{
+    font-family: monospace;
+    font-weight: 600;
+}
+
+#left-main-addtocart>div button{
+    
+    font-size: 15px;
+}
 
 .innerplusminus{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    color: red;
+}
+.innerplusminus p{
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

@@ -10,6 +10,22 @@ if(currentuser !==null){
     signinpop.style.display="inline"
 }
 
+let searchinput=document.querySelector("#l-search-input");
+searchinput.addEventListener("change",(event)=>{
+    window.location.href="products.html";
+})
+
+let goaddtocartpage=document.querySelector(".goaddtocartpage");
+console.log(goaddtocartpage)
+goaddtocartpage.addEventListener("click",(event)=>{
+    window.location.href="addtocart.html"
+})
+
+let orderbutton=document.querySelector("#orderbutton");
+orderbutton.addEventListener("click",(event)=>{
+    window.location.href="extra.html"
+})
+
 lena();
 async function lena(){
     try {
@@ -18,9 +34,7 @@ async function lena(){
         currentuser= result;
         localStorage.setItem("currentuser",JSON.stringify(currentuser));
         currentuser=JSON.parse(localStorage.getItem("currentuser")) || [];
-        display(currentuser.cart)
-        
-        
+        display(currentuser.cart);
     } catch (error) {
         console.log("someting wronge in the fetch data")
     }
@@ -56,6 +70,9 @@ function display(data){
         quantity.innerText=ele.quantity;
         decrement.innerHTML=`<i class="fa-solid fa-minus"></i>`;
         deletee.innerHTML=`<i class="fa-solid fa-xmark"></i>`;
+        deletee.addEventListener("click",(event)=>{
+          
+        })
         bigdiv.append(img,title,price,smalldiv,deletee);
         tbody.append(bigdiv) 
     })

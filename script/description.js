@@ -10,6 +10,17 @@ if(currentuser !==null){
     signinpop.style.display="inline"
 }
 
+let searchinput=document.querySelector("#l-search-input");
+searchinput.addEventListener("change",(event)=>{
+    window.location.href="products.html";
+})
+
+let goaddtocartpage=document.querySelector(".goaddtocartpage");
+console.log(goaddtocartpage)
+goaddtocartpage.addEventListener("click",(event)=>{
+    window.location.href="addtocart.html"
+})
+
 let currentproduct=JSON.parse(localStorage.getItem("currentproduct"))
 let tbody=document.querySelector("#product-description");
 
@@ -72,10 +83,9 @@ addtocart.addEventListener("click",(event)=>{
                         .catch((error) => {
                             console.error('Error:', error);
                         });
+                        alert("you are successfully add to cart");
                         location.href="addtocart.html"
-
                         
-
                     }
                     
                 } catch (error) {
@@ -92,4 +102,6 @@ addtocart.addEventListener("click",(event)=>{
 })
 divright.append(title,rating,description,category,price,addtocart)
 tbody.append(divright)
+
+
 

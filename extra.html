@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond:ital,wght@1,700&family=Inconsolata:wght@300&family=Kalam&family=Poppins&family=Roboto&family=Source+Code+Pro:ital@0;1&family=Unbounded:wght@500;700&display=swap"
+        rel="stylesheet">
+    <title>Order successful</title>
     <style>
-    
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Caveat', cursive;
+            font-family: 'EB Garamond', serif;
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Kalam', cursive;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Source Code Pro', monospace;
+            font-family: 'Unbounded', cursive;
+        }
+
+        #loki {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-top: 80px;
+        }
+
+        #loki img {
+            width: 20%;
+
+        }
+
+        #rupa {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            color: teal;
+            font-size: large;
+            text-align: center;
+        }
+
+        #rupa p:nth-child(2) {
+            color: red;
+        }
     </style>
 </head>
+
 <body>
-    <img src="https://www.ceros.com/inspire/wp-content/uploads/sites/5/2019/03/gifrun.gif" alt="">
+    <div id="loki">
+        <img src="https://www.digitalartsonline.co.uk/cmsdata/slideshow/3640076/rafael-verona-3.gif" alt="">
+    </div>
+    <div id="rupa">
+        <p>Order is Successful. Please view our products page</p>
+        <p>Website developed by Lokendra Singh<br>Email:thelokendrasinghrathore@gmail.com</p>
+    </div>
+
 </body>
+<script>
+    let loki = document.querySelector("#loki>img");
+    loki.addEventListener("click", (event) => {
+        window.location.href = "index.html"
+    })
+</script>
+
 </html>
