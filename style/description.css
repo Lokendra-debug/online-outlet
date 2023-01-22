@@ -1,14 +1,19 @@
 *{
     padding: 0px;
     margin: 0px;
+    
    
 }
 
 body{
-    background-color: rgb(36, 30, 30);
+    
 }
 
 #product-description{
+    font-family: 'Caveat', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
     width: 60%;
     margin: auto;
     margin-top: 20px;
@@ -16,7 +21,7 @@ body{
     border-radius: 15px;
     padding: 30px;
     height: 75vh;
-    background-color: rgb(73, 62, 62);
+    
     display: grid;
     grid-template-columns: 3fr 3fr;
     gap: 40px;
@@ -35,9 +40,9 @@ body{
 
 .divright{
 
-    border: 4px dashed rgb(238, 77, 14);
+    
     padding: 20px;
-    color: goldenrod;
+    color: teal;
     display: flex;
     flex-direction: column;
 }

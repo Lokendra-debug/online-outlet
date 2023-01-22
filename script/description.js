@@ -36,6 +36,60 @@ description.innerText=`Description: ${currentproduct.description}`;
 category.innerText=`Category: ${currentproduct.category}`;
 price.innerHTML=`Price: ${currentproduct.price}`;
 addtocart.innerText="Add to cart";
+
+
+
+addtocart.addEventListener("click",(event)=>{
+
+    if(currentuser !==null){
+            xyz();
+            async function xyz(){
+                try {
+                    let data=await fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/users?search=${currentuser.email}`);
+                    let result=await data.json();
+                    let userlive=result[0];
+                    let datahaikya=userlive.cart.filter((ele,index)=>{
+                        return currentproduct.id ==ele.id;
+                    });
+
+                    if(datahaikya.length!== 0){
+                        alert("data is already add to cart")
+                        location.href="addtocart.html"
+                    }else{
+                        userlive.cart.push(currentproduct);
+
+                        fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/users/${userlive.id}`, {
+                        method: 'PUT', 
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(userlive),
+                        })
+                        .then((response) => response.json())
+                        .then((data) => {
+                            console.log('Success:', data);
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
+                        location.href="addtocart.html"
+
+                        
+
+                    }
+                    
+                } catch (error) {
+                    console.log("something wronge in fetch a wala ")
+                    
+                }
+            }
+
+       
+    }else{
+        alert("You are not Login");
+    }
+
+})
 divright.append(title,rating,description,category,price,addtocart)
 tbody.append(divright)
 

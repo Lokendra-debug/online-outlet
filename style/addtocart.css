@@ -1,0 +1,60 @@
+#uppermain{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 800;
+    
+}
+
+#main-addtocart{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+#right-main-addtocart{
+    border-top: 1px solid teal;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#right-main-addtocart div{
+    display: flex;
+    justify-content: space-between;
+}
+#right-main-addtocart button{
+    width: 70%;
+    margin: auto;
+    font-family: monospace;
+    font-size: small;
+    margin: auto;
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+#left-main-addtocart{
+    padding: 30px;
+    border-top: 1px solid teal;
+    display: grid;
+    gap: 50px;
+    
+    
+}
+#left-main-addtocart>div{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+    gap: 50px;
+}
+
+.innerplusminus{
+    display: flex;
+}
