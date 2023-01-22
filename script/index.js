@@ -10,3 +10,13 @@ if(currentuser !==null){
     signinpop.style.display="inline"
 }
 
+let searchinput=document.querySelector("#l-search-input");
+searchinput.addEventListener("change",(event)=>{
+    window.location.href="products.html";
+})
+
+let goaddtocartpage=document.querySelector(".goaddtocartpage");
+console.log(goaddtocartpage)
+goaddtocartpage.addEventListener("click",(event)=>{
+    window.location.href="addtocart.html"
+})

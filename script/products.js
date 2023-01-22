@@ -10,6 +10,21 @@ if(currentuser !==null){
     signinpop.style.display="inline"
 }
 
+let goaddtocartpage=document.querySelector(".goaddtocartpage");
+console.log(goaddtocartpage)
+goaddtocartpage.addEventListener("click",(event)=>{
+    window.location.href="addtocart.html"
+})
+
+let searchinput=document.querySelector("#l-search-input");
+searchinput.addEventListener("change",(event)=>{
+    fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/product?search=${searchinput.value}`).then((res)=>{
+        return res.json();
+    }).then((res)=>{
+        displayproduct(res)
+    })
+})
+
 
 
 let filterproducts=document.querySelector("#filter-products");
@@ -51,5 +66,51 @@ function displayproduct(data){
         
     })
 }
+
+let lowtohigh=document.querySelector("#lowtohigh");
+let hightolow=document.querySelector("#hightolow");
+let filterbyratings=document.querySelector("#filterbyratings");
+let filterbyacategory=document.querySelector("#filterbyacategory");
+let seeallproducts=document.querySelector("#seeallproducts");
+
+lowtohigh.addEventListener("click",(event)=>{
+    fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/product?sortBy=price&order=asc`).then((res)=>{
+        return res.json();
+    }).then((res)=>{
+        displayproduct(res)
+    })
+});
+
+hightolow.addEventListener("click",(event)=>{
+    fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/product?sortBy=price&order=desc`).then((res)=>{
+        return res.json();
+    }).then((res)=>{
+        displayproduct(res)
+    })
+});
+
+filterbyratings.addEventListener("click",(event)=>{
+    fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/product?sortBy=rating&order=asc`).then((res)=>{
+        return res.json();
+    }).then((res)=>{
+        displayproduct(res)
+    })
+});
+
+filterbyacategory.addEventListener("click",(event)=>{
+    fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/product?sortBy=price&order=desc`).then((res)=>{
+        return res.json();
+    }).then((res)=>{
+        displayproduct(res)
+    })
+});
+
+seeallproducts.addEventListener("click",(event)=>{
+    fetch(`https://63c8ed6a904f040a9652b740.mockapi.io/product`).then((res)=>{
+        return res.json();
+    }).then((res)=>{
+        displayproduct(res)
+    })
+});
 
 
