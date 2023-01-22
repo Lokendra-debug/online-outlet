@@ -4,11 +4,19 @@ if(currentuser !==null){
     Currentuser.innerText=currentuser.name;
     let signinpop=document.querySelector("#signinpop");
     signinpop.style.display="none"
+    jadu.innerText="Log out"
 }else{
     Currentuser.innerText="Hello User"
     let signinpop=document.querySelector("#signinpop");
     signinpop.style.display="inline"
 }
+
+jadu.addEventListener("click",(event)=>{
+    localStorage.removeItem("currentuser")
+    window.location.href="index.html"
+
+})
+
 
 let goaddtocartpage=document.querySelector(".goaddtocartpage");
 console.log(goaddtocartpage)
